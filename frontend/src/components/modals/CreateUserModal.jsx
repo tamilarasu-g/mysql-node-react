@@ -29,7 +29,7 @@ function CreateUserModal({ addUser }) {
 
     try {
       //post req to server
-      const res = await axios.post(process.env.REACT_APP_BACKEND_URL, {
+      const res = await axios.post(import.meta.env.VITE_APP_BACKEND_URL, {
         name,
         email
       });
