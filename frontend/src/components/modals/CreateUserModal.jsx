@@ -29,7 +29,7 @@ function CreateUserModal({ addUser }) {
 
     try {
       //post req to server
-      const res = await axios.post("http://localhost:3000/", {
+      const res = await axios.post(process.env.REACT_APP_BACKEND_URL, {
         name,
         email
       });
